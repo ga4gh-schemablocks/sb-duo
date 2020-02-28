@@ -1,6 +1,6 @@
 "$schema": http://json-schema.org/draft-07/schema#
 "$id": https://schemablocks.org/schemas/ga4gh/DataUseLimitation/v0.0.1
-title: Data use limitation
+title: DataUseLimitation
 meta:
   contributors:
     - description: "Melanie Courtot"
