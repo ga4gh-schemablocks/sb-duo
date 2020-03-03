@@ -33,6 +33,7 @@
     <td>
       <ul>
 <li><a href="https://orcid.org/0000-0002-9551-6370">Melanie Courtot</a></li>
+<li><a href="https://orcid.org/0000-0002-9903-4248">Michael Baudis</a></li>
 <li>DUO group</li>
 <li><a href="https://orcid.org/0000-0002-4839-5158">Isuru Liyanage</a></li>
       </ul>
@@ -71,7 +72,7 @@ particularly for research data in the health/clinical/biomedical domain.
   </tr>
   <tr>
     <th>modifier</th>
-    <td>#/definitions/DataUseModifier</td>
+    <td>./DataUseModifier</td>
   </tr>
   <tr>
     <th>term</th>
@@ -93,7 +94,7 @@ free text description mainly to encapsulate those conditions that wouldn't be de
 
 #### modifier
 
-* type: #/definitions/DataUseModifier
+* type: ./DataUseModifier
 
 modifier/restriction applicable for the DUO
 
