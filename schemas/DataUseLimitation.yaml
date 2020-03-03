@@ -5,6 +5,8 @@ meta:
   contributors:
     - description: "Melanie Courtot"
       id: "orcid:0000-0002-9551-6370"
+    - description: "Michael Baudis"
+      id: "orcid:0000-0002-9903-4248"
     - description: "DUO group"
     - description: "Isuru Liyanage"
       id: "orcid:0000-0002-4839-5158"
@@ -18,29 +20,13 @@ meta:
 description: |
   The (GA4GH) Data Use Ontology (DUO) includes terms describing data use conditions,
   particularly for research data in the health/clinical/biomedical domain.
-definitions:
-  DataUseModifier:
-    type: object
-    description: modifier for DUO
-    properties:
-      text:
-        type: string
-        description: text description of the modifier eg. date rage, geographic location, user/institute (RI)
-      ontology:
-        "$ref": https://schemablocks.org/schemas/sb-phenopackets/OntologyClass/v1.0.0
-        description: ontology describing the modifier/restriction
-    oneof:
-      - required:
-          - text
-      - required:
-          - ontology
 type: object
 properties:
   term:
     "$ref": https://schemablocks.org/schemas/sb-phenopackets/OntologyClass/v1.0.0
     description: DUO - ontology term subclass of either DUO_0000001 or DUO_0000017
   modifier:
-    "$ref": "#/definitions/DataUseModifier"
+    "$ref": "./DataUseModifier"
     description: modifier/restriction applicable for the DUO
   description:
     type: string
